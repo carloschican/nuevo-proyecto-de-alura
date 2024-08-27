@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --color-primario: #E0FBE2;
+    --color-secundario: #BFF6C3;
+    --color-terciario: #B0EBB4;
+    --color-cuarto: #ACE1AF;
+    --color-letra: #CEDF9F;
+
+ 
+    --fuente-comic-neue-light:'Comic Neue', cursive;
+    --fuente-chakra: 'Chakra Petch', sans-serif;
+
+ }
+
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-size: 13px;
+    background: var(--color-primario);
+    background-image: url(imagenes/butterfly-1829404.jpg);
+    background-repeat: no-repeat;
+}
+
+.texto {
+    text-align: 1em;
+    font-family: "Comic Neue", cursive;
+    color: white;
+    display: flex;
+    /*flex-direction:*/
+}
+
+.imagen_alura {
+    padding: 0%;
+}
+
+.logoalura{
+    padding-top: 15px;
+    margin-left: 5px;
+    background-color: var(--color-primario);
+
+}
+
+.main{
+    display: flex;
+    margin: 20px;
+    column-gap: 10px;
+
+}
+
+::placeholder{
+    color: color var(--color-letra);
+}
+
+.mensaje {
+    width: 400px; /* Tamaño del área de texto */
+    height: 350px; /* Tamaño del área de texto */
+    font-size: 25px; /* Tamaño del texto dentro del área de texto */
+    font-family: "Comic Neue", cursive;
+    font-style: normal;
+    background: white;
+    border: none;
+    opacity: 0px;
+    border-radius: 15px;
+    padding-left: 8px;
+}
+
+.cuadro__de__texto2 {
+    width: 340px;
+    height: 330px;
+    opacity: 10px;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+    border-radius: 16px;
+    margin-left: px;
+    margin-top: 20px;
+    padding-left: 8px;
+    }
+
+.presentacion1{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion2 {
+    width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn_encritar{
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-cuarto);
+    border-radius: 16px;
+    font-family: var(--fuente-chakra);
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn_encritar:active {
+    transform: scale(0.95); /* Escala el botón al 95% para simular el efecto de "hundirse" */
+    box-shadow: inset 0px 4px 6px rgba(0,0,0,0.3); /* Sombra interna para mayor efecto */
+ }
+
+
+.btn_encritar:hover {
+    background-color: var(--color-primario);
+
+}
+
+.btn_copiar {
+    border: 1px solid #123248;
+    background-color: var(--color-cuarto);
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: var(--fuente-chakra);
+    color:#000000;
+    width: 200px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 18px;
+    transition: all 0.2s ease; /* Transición suave para todos los cambios */
+}
+
+/* Estilo cuando el botón es presionado */
+.btn_copiar:active {
+    transform: scale(0.95); /* Escala el botón al 95% para simular el efecto de "hundirse" */
+    box-shadow: inset 0px 4px 6px rgba(0,0,0,0.3); /* Sombra interna para mayor efecto */
+}
+
+
+.btn_copiar:hover {
+    background-color: var(--color-primario);
+}
+
+.footer{
+    background-color: var(--color-secundario);
+    font-family: "Comic Neue", cursive;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.presentacion_imagen {
+    text-decoration: none;
+}
+
+@media (max-width: 930px ) {
+    .main {
+        flex-direction: column;
+    }
+
+}
