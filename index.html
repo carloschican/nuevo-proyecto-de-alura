@@ -1,49 +1,84 @@
 <!DOCTYPE html>
 <html lang="es-mex">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></link>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>PROYECTO DE ENCRIPTACIÓN</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="imagen_alura">
-        <img class="logoalura" src="imagenes/Logo.png" alt="logo de alura">
+      <img class="logoalura" src="imagenes/Logo.png" alt="logo de alura" />
     </header>
     <main class="main">
-        <section class="presentacion1">
-            <textarea class="mensaje" id="mensaje" rows="35" cols="90" placeholder="Ingrese el texto aqui"></textarea>
-           <div class="texto"> <img src="imagenes/bi_exclamation-circle-fill.png">Solo letras minúsculas y sin acentos</img>
-           </div>
-                
-           
-            <div class="botones">
-                <button class="btn_encritar" id="btn_Encriptar" onclick="encriptar ()" >Encriptar</button>
-                <button class="btn_encritar" id="btn_Desencriptar" onclick="desencriptar ()" >Desencriptar</button>
-            </div>
-        </section>
-        <section class="presentacion2">
-            <textarea class="cuadro__de__texto2" id="cuadro__de__texto2" rows="35" cols="90" placeholder="">olis</textarea>
-            <div>
-                <button class="btn_copiar" value="cuadro__de__texto2" id="btn_copiar" onclick="copiarTexto()">Copiar</button>
-            </div>
-        </section>
+      <section class="presentacion1">
+        <textarea
+          class="mensaje"
+          id="mensaje"
+          rows="35"
+          cols="90"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="texto">
+          <img src="imagenes/bi_exclamation-circle-fill.png" />Solo letras
+          minúsculas y sin acentos
+        </div>
+
+        <div class="botones">
+          <button
+            class="btn_encritar"
+            id="btn_Encriptar"
+            onclick="encriptar ()"
+          >
+            Encriptar
+          </button>
+          <button
+            class="btn_encritar"
+            id="btn_Desencriptar"
+            onclick="desencriptar ()"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="presentacion2">
+        <textarea
+          class="cuadro__de__texto2"
+          id="cuadro__de__texto2"
+          rows="35"
+          cols="90"
+          placeholder=""
+        >
+olis</textarea
+        >
+        <div>
+          <button
+            class="btn_copiar"
+            value="cuadro__de__texto2"
+            id="btn_copiar"
+            onclick="copiarTexto()"
+          >
+            Copiar
+          </button>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
     <footer class="footer">
-        <h2>Proyecto creado por Carlos Albeiro Chicangana</h2>
-        <h2>Información de contacto</h2>
-        <div>
-        <a class="presentacion_imagen" href="https://co.linkedin.com/">Linkedin</a>
-        <a class="presentacion_imagen" href="https://www.instagram.com/">Instagran</a>
-        <a class="presentacion_imagen" href="https://www.github.com/" >Github</a>
-       </div>
-        <div>
-    <div class="copyright">
-     © 2024 Todos los derechos Reservados |
-    </div>
-</div>
+      <h2>Proyecto creado por Carlos Albeiro Chicangana</h2>
+      <h2>Información de contacto</h2>
+      <div>
+        <a class="presentacion_imagen" href="https://co.linkedin.com/"
+          >Linkedin</a
+        >
+        <a class="presentacion_imagen" href="https://www.instagram.com/"
+          >Instagran</a
+        >
+        <a class="presentacion_imagen" href="https://www.github.com/">Github</a>
+      </div>
+      <div>
+        <div class="copyright">© 2024 Todos los derechos Reservados |</div>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
